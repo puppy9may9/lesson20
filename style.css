@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "small-1 small-1 small-2 small-3"
+      "small-1 small-1 small-2 small-4"
+      "small-1 small-1 small-5 small-5";
+  }
+  
+  .small-1 { grid-area: small-1; 
+    background: url( https://shakai.ru/file/manga/deathnote/manga/30/1.png  ) ;
+background-size: cover;}
+  
+  .small-2 { grid-area: small-2;
+     background:url( https://99px.ru/sstorage/56/2012/04/image_562704121230388457088.jpg ) ;
+    background-size: cover; }
+  
+  .small-3 { grid-area: small-3;
+  background:url(https://shakai.ru/file/manga/deathnote/manga/4/1.png );
+  background-size: cover; }
+  
+  .small-4 { grid-area: small-4;
+  background:url( https://read.yagami.me/content/comics/death_note_53653f82105c4/017__0__5365430dc4a0e/DeathNote-03-017-01.png );
+  background-size: cover;  }
+  
+  .small-5 { grid-area: small-5;
+  background:url(https://i.pinimg.com/736x/9b/13/71/9b1371d7a03dc7dfca97d7703888e5da.jpg );
+   }
+  .container div{
+    background-color: rgb(182, 130, 130);
+  }
+ img {
+     height:100px ;
+     width:200px ;
+     border-radius: 300%;
+ }
